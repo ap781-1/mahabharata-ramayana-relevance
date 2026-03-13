@@ -24,7 +24,7 @@ changes and that the reciters of the various regions made their own
 addition and elaboration to the structure of the texts.[^2] And in spite
 of the diverse elements of which it consists, this mighty works are
 considered by the Indians as a unitary compact work which has for its
-authors, the age old Vyasa(Mahabharata) and Valmiki(Ramayana). The
+authors, the age old Vyasa (Mahabharata) and Valmiki (Ramayana). The
 historiography of Indian scholar (the secondary sources of the epics)
 was affected by the notions of western academics, thus leading to
 production and reproduction of the product of an autochthonous history.
