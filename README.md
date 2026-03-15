@@ -4,6 +4,12 @@
 
 
 
+## 🔗 Read the Full Essay
+
+👉 **Live Website:**  
+(https://ap781-1.github.io/mahabharata-ramayana-relevance/#fn3)
+
+---
 
 
 
