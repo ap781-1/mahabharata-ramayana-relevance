@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epics & eternity · Mahabharata, Ramayana & now</title>
+    <!-- Fonts: serif for body, sans for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,450;8..60,600&family=Inter:opsl,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons (subtle) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f7f3ef;  /* soft parchment */
+            color: #1f2a36;
+            font-family: 'Source Serif 4', serif;
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 1.1rem;
+            padding: 2rem 1rem;
+        }
+        .blog-container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.06), 0 6px 14px rgba(0,0,0,0.03);
+            padding: 3.2rem 3rem;
+        }
+        @media (max-width: 600px) {
+            body { padding: 0.8rem; }
+            .blog-container { padding: 2rem 1.5rem; }
+        }
+
+        /* headings – clean & structured */
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 2.9rem;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-top: 0.1rem;
+            margin-bottom: 0.4rem;
+            color: #2e1f14;
+        }
+        .subhead {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 1.3rem;
+            color: #6a5e52;
+            border-left: 5px solid #b2967d;
+            padding-left: 1.4rem;
+            margin: 0.5rem 0 2rem 0;
+        }
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 2rem;
+            margin: 3rem 0 1.2rem 0;
+            letter-spacing: -0.01em;
+            color: #362b22;
+            border-bottom: 2px solid #e1d5ca;
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin: 2.2rem 0 0.8rem 0;
+            color: #4e3f33;
+        }
+
+        /* paragraph styling */
+        p {
+            margin-bottom: 1.6rem;
+            text-align: left;
+        }
+
+        /* subtle dropcap for intro paragraph only */
+        .intro::first-letter {
+            font-size: 4rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.65rem;
+            color: #aa7b5b;
+            font-weight: 500;
+            font-family: 'Source Serif 4', serif;
+        }
+
+        /* concept / highlighted term */
+        .concept {
+            background: #efe7df;
+            font-weight: 450;
+            padding: 0.15rem 0.45rem;
+            border-radius: 6px;
+            font-style: italic;
+            color: #2f3a40;
+        }
+
+        /* blockquotes – for citations & thoughtful excerpts */
+        blockquote {
+            font-family: 'Inter', sans-serif;
+            background: #f7f1ea;
+            padding: 1.8rem 2.2rem;
+            border-radius: 28px 28px 28px 10px;
+            margin: 2.2rem 0;
+            border-left: 8px solid #b48a6a;
+            color: #2f2b27;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+        blockquote p {
+            margin-bottom: 0.6rem;
+            font-size: 1.18rem;
+        }
+        blockquote footer {
+            font-size: 0.95rem;
+            color: #735f4f;
+            margin-top: 0.8rem;
+            text-align: right;
+            font-style: italic;
+        }
+
+        /* pull quote style for short impactful lines */
+        .pull-quote {
+            font-size: 1.45rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #4f3f32;
+            background: #f1ebe5;
+            padding: 1.8rem 2.2rem;
+            border-radius: 30px;
+            margin: 2rem 0;
+            border-left: 6px solid #c1a187;
+            font-style: normal;
+        }
+        .pull-quote i {
+            color: #8f735b;
+            margin-right: 0.5rem;
+        }
+
+        /* footnotes / references */
+        .footnote-ref {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            vertical-align: super;
+            color: #976f53;
+            font-weight: 500;
+            margin-left: 2px;
+        }
+        .ref-block {
+            font-size: 0.95rem;
+            border-top: 1px solid #dacfc5;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            font-family: 'Inter', sans-serif;
+            color: #3e3a36;
+        }
+        .ref-block h4 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: #7b614d;
+        }
+        .ref-block p {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+
+        .byline {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #7a6d61;
+            margin-top: -0.8rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .byline i {
+            color: #b18d71;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #cebfb2, transparent);
+            margin: 2.5rem 0;
+        }
+
+        /* footnote call style */
+        .footnote {
+            font-size: 0.9rem;
+            border-bottom: 1px dotted #bbaa9b;
+            cursor: help;
+        }
+
+        /* youtube embed placeholder (just text, no actual embed) */
+        .yt-ref {
+            background: #f0e7df;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: #5e4b3b;
+            margin: 0.2rem 0;
+        }
+        .yt-ref i {
+            color: #b00;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="blog-container">
+
+    <!-- title and metadata -->
+    <h1>How relevant are Mahabharata and Ramayana in contemporary times?</h1>
+    <div class="subhead">epic · dharma · karma · and the stories we live by</div>
+    <div class="byline">
+        <i class="fas fa-scroll"></i> <span>essay</span>
+        <span style="flex:1; text-align:right;"><i class="far fa-clock"></i> 2026 · reflection</span>
+    </div>
+
+    <!-- intro with dropcap -->
+    <p class="intro">In its present form the Rāmāyaṇa consists of about 2400 ślokas and is divided into seven books. The Mahābhārata, which in its present form consists of over 100,000 ślokas—equal to about eight times as much as the Iliad and Odyssey put together—is by far the longest poem known to literary history.<span class="footnote-ref"><a href="#fn1" style="text-decoration: none; color:#976f53;">[1]</a></span> In reality, one can speak of these texts as an epic and as a “poem” only in a very restricted sense. Indeed, the Mahābhārata or the Rāmāyaṇa is not at all a poetic product, but rather, an entire literature.</p>
+
+    <p>In order to understand the dynamics involved in the building and evolution of these literatures, one needs to realize the context and background against which the divergent interpretations developed. We know that the literary activity in ancient India lay mostly in the hands of the priests, the Brahmins; and we have seen indeed how they have “Brahminised” the popular texts. Various forms (representation), in which the subjects are exposed to the literature, has to do with the appropriation of these texts, and in the way one looks at them, like stage adaption through rhapsodies and traditional dances, cartoons and soap operas, contemporaneity of these texts, bedtime stories, or reading the versions of the primary text, and so on. It is understandable that the meaning of the verses in the memory of rhapsodes gets shifted, that the text had to undergo often significant changes and that the reciters of the various regions made their own addition and elaboration to the structure of the texts.<span class="footnote-ref"><a href="#fn2" style="text-decoration: none; color:#976f53;">[2]</a></span> And in spite of the diverse elements of which it consists, these mighty works are considered by the Indians as a unitary compact work which has for its authors, the age‑old Vyāsa (Mahābhārata) and Vālmīki (Rāmāyaṇa). The historiography of Indian scholar (the secondary sources of the epics) was affected by the notions of western academics, thus leading to production and reproduction of the product of an autochthonous history.</p>
+
+    <!-- blockquote Ginzburg -->
+    <blockquote>
+        <p>“The fashionable injunction to study reality as a text should be supplemented by the awareness that no text can be understood without a reference to extratextual realities.”<span class="footnote-ref"><a href="#fn3" style="color:#976f53;">[3]</a></span></p>
+    </blockquote>
+
+    <p>At least 1500 years ago, these epics were already as—or at least similar to—what it is today in our manuscripts. Mahābhārata and Rāmāyaṇa, besides complimenting each other, cut across markers of time, colour, race, language and gender—the markers which have continued to haunt human beings over millenniums. The Rāmāyaṇa and Mahābhārata cannot be studied by the binaries of good‑bad, right‑wrong, sacred/profane, as these dichotomies are not the structure of telling stories. What is possible though, while interpreting these epics, is to see them through the lenses of the relationship between <span class="concept">karma</span> and <span class="concept">dharma</span>, while understanding the difference between <span class="concept">dhamma</span> and <span class="concept">dharma</span>, in the modern context.</p>
+
+    <h2>Karma · dharma · dhamma</h2>
+    <p>Law of karma is relation between action and its fruit, which ensures that morally determinate action does not disappear into nothingness but eventually meets its due retribution, the good with happiness, the bad with suffering.<span class="footnote-ref"><a href="#fn4" style="color:#976f53;">[4]</a></span> But Devdutt Pattanaik explains the concept of Māyā where, in <em>Sanātana Dharma</em>, the karma is not how it is commonly understood.<span class="footnote-ref"><a href="#fn5" style="color:#976f53;">[5]</a></span> The biblical reference of “you reap what you sow” is different from the <em>Sanātana</em> worldview. Apart from the traditional law, dharma is believed to be the act of respecting and helping the helpless, without considering the consequences of one’s actions. The past, which neglects of the value of precise and detailed comparison, has left us with nothing but general impressions, no more reliable for their frequent repetition, on questions of what can be believed and what can be assumed.</p>
+
+    <div class="pull-quote">
+        <i class="fas fa-leaf"></i> Dhamma connotes a way of life outside the worldly—a life of a hermit, a <em>sanyāsī</em>. Dharma, on the contrary, are social and economic obligations of a householder, a <em>sansārī</em> which he/she has to perform, involuntarily.
+    </div>
+
+    <p>The Dhamma and Dharma as dichotomies, not necessarily in the light of religious practices (Buddhism and Brāhmaṇism), but with respect to their ideologies—which Devdutt Pattanaik elaborates in his lecture, plotting them in the context of the epics. Dhammapada broadly formulates a practical spirituality, guidelines to or simply a way of right living, and “one who will follow the Dhammapada will taste the bliss of emancipation.”<span class="footnote-ref"><a href="#fn6" style="color:#976f53;">[6]</a></span> Dhamma points to a way of life outside the worldly, a life of a hermit, a <em>sanyāsī</em>. Dharma, on the contrary, are social and economic obligations of a householder, a <em>sansārī</em> which he/she has to perform, often involuntarily. The framework of “Hindu” society is the emphasis on dharma (duties) and, judging by the law books, access to right is limited to the privileged class.<span class="footnote-ref"><a href="#fn7" style="color:#976f53;">[7]</a></span> Mahābhārata and Rāmāyaṇa are epics which focus on <em>Dharma sthāpanā</em> (establishment of dharma), while rejecting, quite strongly, the ideas of Dhamma.<span class="footnote-ref"><a href="#fn8" style="color:#976f53;">[8]</a></span></p>
+
+    <h2>Episodes of dharma · dilemmas without binaries</h2>
+    <p>The Dharma can be understood only if one does not resort to advocating the righteousness of one’s action. This can be traced back to Rāmāyaṇa, where Rāvaṇa, driven by his ‘Dharma’, inimically believes Śūrpaṇakhā, and abducts Sītā from the forest. Rāvaṇa, a Vedic scholar, a devotee of Śiva, is killed by Rāma for kidnapping Sītā. Sītā, after all the ‘Rāmāyaṇa’, is abandoned by Rāma, back into the forest, for she is seen as ‘impure’.<span class="footnote-ref"><a href="#fn9" style="color:#976f53;">[9]</a></span> In an episode of Mahābhārata, Bhīṣma, the son of King Śantanu and River goddess Gaṅgā, for his father’s happiness (to marry Satyavatī), sacrifices his throne (performing <em>dharma-ulaṅghana</em>), and vows to carry on a life of <em>brahmacārī</em> and serve the ruler of Hastināpura. It was due to this decision of his that the kingdom sees various downfalls, ultimately leading to the war between cousins.<span class="footnote-ref"><a href="#fn10" style="color:#976f53;">[10]</a></span></p>
+
+    <!-- short illustrative case -->
+    <h3>A contemporary dilemma</h3>
+    <p>An obstinate refusal to question of right/wrong, good/bad, is not just on the basis of subjectivity, or merely relativity. Let us take a case. A woman, who is supposed to get married to a man, calls off the wedding a week before as she realizes that her education will be compromised if she gets married. The man, on the other hand, feels betrayed by the decision. He realizes the amount of money spent and the loss of his family integrity. He thus files a complaint in the court. The court case goes on for years ruining the woman’s career. This case can be “judged” differently by different people, bringing all kinds of pre‑existing views.</p>
+
+    <!-- conclusion -->
+    <h2>Conclusion · beyond right and wrong</h2>
+    <p>While one can still contest the righteousness of Sītā and the deeds of Rāma, one can say Karṇa was right, and Kṛṣṇa was wrong, citing different narratives, on the basis of various questions, and still not grasp the perception and presumptions of the epics. A simple way to investigate historical texts as dynamic as these, and still make sense of them in the modern context, is to see them through the lens of <span class="concept">karma</span> (actions) and <span class="concept">dharma</span> (consequences).</p>
+
+    <!-- horizontal rule for references -->
+    <hr>
+
+    <!-- references block with footnotes (styled) -->
+    <div class="ref-block">
+        <h4><i class="fas fa-feather" style="margin-right: 8px; color:#7b614d;"></i> sources & notes</h4>
+        <p id="fn1">[1] Macdonell, Arthur A. <em>A History of Sanskrit Literature.</em> London: William Heinemann Ltd. p.237‑240, p.254‑258.</p>
+        <p id="fn2">[2] Winternitz, Maurics. <em>A History of Indian Literature.</em> Delhi: Motilal Banarsidass. p.475‑481.</p>
+        <p id="fn3">[3] Ginzburg, Carlo. <em>Checking the Evidence: The Judge and the Historian.</em> Chicago p.84.</p>
+        <p id="fn4">[4] Buddharakkhita, Acharya. <em>The Dhammapada — Buddha's Path of Wisdom.</em> Kandy: Buddhist Publication Society, p.11.</p>
+        <p id="fn5">[5] Devdutt Pattanaik: <span class="yt-ref"><i class="fab fa-youtube"></i> www.youtube.com/watch?v=3_Rz_yQswMc&t=3210s</span></p>
+        <p id="fn6">[6] Buddharakkhita, p.1‑5.</p>
+        <p id="fn7">[7] Thapar, Romila. <em>Ancient Indian Social History.</em> New Delhi: Orient Private Limited.</p>
+        <p id="fn8">[8] Further: <span class="yt-ref"><i class="fab fa-youtube"></i> www.youtube.com/watch?v=3_Rz_yQswMc&t=3210s</span></p>
+        <p id="fn9">[9] <span class="yt-ref"><i class="fab fa-youtube"></i> www.youtube.com/watch?v=1QkYOqI3jSM&t=3725s</span></p>
+        <p id="fn10">[10] Mahābhārata episode: <span class="yt-ref"><i class="fas fa-tv"></i> hotstar.com/tv/mahabharat/.../1000011769</span></p>
+        <p style="margin-top: 1.2rem;">—— based on the essay <em>“How relevant are Mahabharata and Ramayana in contemporary times”</em>.</p>
+    </div>
+
+    <!-- delicate footer -->
+    <div style="font-family: Inter; font-size:0.85rem; color:#aa9b8e; text-align:center; margin-top:2rem; border-top:1px dashed #d6c9bd; padding-top:1.5rem;">
+        <i class="fas fa-om"></i>  karma · dharma · dhamma  <i class="fas fa-om"></i>
+    </div>
+</div>
+</body>
+</html>
